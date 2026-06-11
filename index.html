@@ -1,10 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div id="entrada" style="
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#ff4d6d,#ff758f);
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:9999;
+text-align:center;
+">
 
-<title>Leonardo & Isabela ❤️</title>
+<h1>Leonardo & Isabela ❤️</h1>
+
+<p>Uma pequena surpresa para você...</p>
+
+<button onclick="entrar()" style="
+padding:15px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+">
+Entrar ❤️
+</button>
+
+</div>
+
+<iframe
+id="musica"
+width="0"
+height="0"
+src=""
+allow="autoplay">
+</iframe>
 
 <style>
 
@@ -43,12 +74,33 @@ font-size:1.3rem;
 }
 
 .contador{
-margin-top:25px;
-font-size:1.2rem;
-background:rgba(255,255,255,0.15);
-padding:15px 25px;
-border-radius:20px;
-backdrop-filter:blur(10px);
+function atualizarContador(){
+
+const inicio =
+new Date("2025-05-16T00:00:00");
+
+const agora = new Date();
+
+const diff = agora - inicio;
+
+const dias =
+Math.floor(diff / 86400000);
+
+const horas =
+Math.floor(diff % 86400000 / 3600000);
+
+const minutos =
+Math.floor(diff % 3600000 / 60000);
+
+document.getElementById("contador")
+.innerHTML =
+`❤️ Juntos há ${dias} dias, ${horas} horas e ${minutos} minutos ❤️`;
+
+}
+
+setInterval(atualizarContador,1000);
+
+atualizarContador();
 }
 
 section{
@@ -196,12 +248,13 @@ transform:translateY(0);
 <div class="card">
 <h2>📸 Nossos Momentos</h2>
 
-<div class="galeria">
+<div class="card">
 
-<img src="foto4.jpg.jpeg">
-<img src="foto5.jpg.jpeg">
-<img src="foto6.jpg.jpeg">
-<img src="foto7.jpg.jpeg">
+<h2>📸 Nossos Momentos</h2>
+
+<img id="slide" class="foto" src="foto4.jpg.jpeg">
+
+</div>
 
 </div>
 
@@ -225,35 +278,25 @@ Ouvir Música ❤️
 
 </section>
 
-<section class="final">
+<section class="final">.foto{
+cursor:pointer;
+}
+
+.foto:active{
+transform:scale(1.1);
+}
 
 <h2>💌 Para Isabela</h2>
 
 <p>
 
-Você é o melhor presente que Deus me deu.
-
-Eu te esperei a minha vida inteira, e com você ao meu lado me faz me sentir bem, me traz motivos para continuar lutando cada dia mais.
-
-Me apaixonando cada vez mais pelos seus olhos, pelos seus beijinhos e pelo seu abraço que me faz sentir seguro e em casa.
-
-Nos conhecemos há pouco tempo e parece que já faz meses.
-
-Tudo isso é tão especial que não existem palavras para explicar.
-
-Sei que este amor veio de Deus para abençoar nossas vidas.
-
-Quero te amar cada dia mais e fazer dar certo cada vez mais contigo.
-
-Porque o amor não é fácil, mas o importante é estarmos sempre juntos.
-
-E acima de tudo, ter Deus no centro do nosso relacionamento.
-
-EU TE AMO MUITO ❤️
-
-Que Deus abençoe a nossa união, nosso namoro e nosso futuro.
-
-❤️ Leonardo & Isabela ❤️
+Você é o melhor presente que Deus me deu. Eu te esperei a minha vida inteira, e com você ao meu lado me faz me sentir bem, me trás motivos para continuar lutando cada dia mais, me deixando bobo com cada detalhe teu, fazendo eu me apaixonar cada vez mais pelo seus olhos, por seus beijinhos que amo, e teu abraço que me trás um conforto tão maravilhoso que me faz sentir seguro e em casa. 
+Nos conhecemos a pouco tempo e parece que já faz meses, e tudo isso é esplêndido, que os nossos sentimentos se uniram de uma forma tão forte e rápida que não tem palavras para explicar e é até difícil de compreender, mas sei que é algo verdadeiro e sei que este amor veio de Deus para abençoar nossas vidas.
+Quero poder te amar cada dia mais e fazer dar certo cada vez mais contigo, porque o amor não é fácil, as vezes as coisas vão ficar difíceis mas o importante é sempre estarmos juntos, amar um ao outro independente da situação, e o mais importante sempre ter a Deus no centro do nosso relacionamento.
+Eu te amo meu amor muito muito muito…
+Que Deus abençoe a nossa união, o nosso relacionamento, o nosso namoro e o nosso futuro.
+Você é muito especial, importante para mim. EU TE AMO DEMAIS MINHA PRINCESA, MINHA LINDA, MINHA GATINHA, MINHA NAMORADA, MINHA MULHER, MINHA VIDA…
+EU TE AMO INTENSAMENTE E INFINITAMENTE❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩵🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷💞🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🩷🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡🧡❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥❤️‍🔥💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💜💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💛💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💚💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💘💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💗💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟💟🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🫶🏻🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎🤎💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓💓❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️❣️🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍🤍 EU TE AMO AMOR♥️🫀
 
 </p>
 
@@ -296,10 +339,37 @@ heart.style.animationDuration=
 heart.style.opacity=Math.random();
 
 document.body.appendChild(heart);
+function entrar(){
 
+document.getElementById("entrada").style.display="none";
+
+document.getElementById("musica").src =
+"https://www.youtube.com/embed/nSSceWPREBA?autoplay=1";
+
+}
 }
 
 </script>
+const fotos = [
+"foto4.jpg.jpeg",
+"foto5.jpg.jpeg",
+"foto6.jpg.jpeg",
+"foto7.jpg.jpeg"
+];
 
+let atual = 0;
+
+setInterval(() => {
+
+atual++;
+
+if(atual >= fotos.length){
+atual = 0;
+}
+
+document.getElementById("slide").src =
+fotos[atual];
+
+},3000);
 </body>
 </html>
