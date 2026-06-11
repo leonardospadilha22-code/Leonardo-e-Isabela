@@ -3,122 +3,303 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Leonardo & Isabela ❤️</title>
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:#121212;
-    color:white;
-    text-align:center;
+background:#0f0f0f;
+color:white;
+overflow-x:hidden;
 }
 
 header{
-    padding:50px 20px;
-    background:linear-gradient(135deg,#1DB954,#121212);
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:linear-gradient(135deg,#ff4d6d,#ff758f,#ff8fa3);
+padding:20px;
 }
 
-h1{
-    font-size:3em;
+header h1{
+font-size:3.5rem;
+margin-bottom:15px;
+animation:fadeIn 2s;
+}
+
+header p{
+font-size:1.3rem;
+}
+
+.contador{
+margin-top:25px;
+font-size:1.2rem;
+background:rgba(255,255,255,0.15);
+padding:15px 25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
 }
 
 section{
-    padding:40px 20px;
-}
-
-img{
-    width:90%;
-    max-width:500px;
-    border-radius:20px;
-    margin:15px 0;
+padding:50px 20px;
 }
 
 .card{
-    background:#1e1e1e;
-    padding:20px;
-    border-radius:20px;
-    margin:20px auto;
-    max-width:700px;
+background:#1b1b1b;
+max-width:850px;
+margin:25px auto;
+padding:25px;
+border-radius:25px;
+box-shadow:0 0 20px rgba(255,255,255,0.08);
+animation:fadeUp 1s;
+}
+
+.card h2{
+margin-bottom:15px;
+color:#ff7aa2;
+}
+
+.foto{
+width:100%;
+max-width:600px;
+border-radius:20px;
+margin-top:15px;
+transition:0.4s;
+}
+
+.foto:hover{
+transform:scale(1.03);
+}
+
+.galeria{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:15px;
+margin-top:20px;
+}
+
+.galeria img{
+width:100%;
+border-radius:20px;
+}
+
+.botao{
+display:inline-block;
+margin-top:20px;
+padding:15px 30px;
+background:#ff4d6d;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-size:18px;
 }
 
 .final{
-    background:#1DB954;
-    color:white;
-    padding:50px 20px;
+background:linear-gradient(135deg,#ff4d6d,#ff758f);
+padding:60px 25px;
+text-align:center;
 }
 
-button{
-    background:#1DB954;
-    border:none;
-    padding:15px 30px;
-    color:white;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:18px;
+.final p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+white-space:pre-line;
 }
+
+.heart{
+position:fixed;
+top:-10px;
+font-size:20px;
+animation:fall linear infinite;
+pointer-events:none;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-10px);
+}
+100%{
+transform:translateY(100vh);
+}
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(50px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
 </head>
 
 <body>
 
 <header>
-    <h1>Leonardo & Isabela ❤️</h1>
-    <p>Nossa história em 2026</p>
+
+<h1>Leonardo & Isabela ❤️</h1>
+
+<p>Uma história escrita por Deus ✨</p>
+
+<div class="contador" id="contador"></div>
+
 </header>
 
 <section>
-    <div class="card">
-        <h2>💘 Onde tudo começou</h2>
-        <p>16 de Maio de 2026</p>
-        <p>O dia em que nossas histórias começaram a se encontrar.</p>
-        <img src="fotos/foto1.jpg.jpeg">
-    </div>
 
-    <div class="card">
-        <h2>❤️ Início do namoro</h2>
-        <p>04 de Junho de 2026</p>
-        <img src="fotos/foto2.jpg.jpeg">
-    </div>
+<div class="card">
+<h2>💘 Onde tudo começou</h2>
+<p>16 de Maio de 2025</p>
+<img class="foto" src="foto1.jpg.jpeg">
+</div>
 
-    <div class="card">
-        <h2>💍 Entrega das alianças</h2>
-        <p>09 de Junho de 2026</p>
-        <img src="fotos/foto3.jpg.jpeg">
-    </div>
+<div class="card">
+<h2>❤️ Nosso namoro</h2>
+<p>04 de Junho de 2025</p>
+<img class="foto" src="foto2.jpg.jpeg">
+</div>
 
-    <div class="card">
-        <h2>📸 Nossos momentos</h2>
-        <img src="fotos/foto4.jpg.jpeg">
-        <img src="fotos/foto5.jpg.jpeg">
-        <img src="fotos/foto6.jpg.jpeg">
-        <img src="fotos/foto7.jpg.jpeg">
-    </div>
+<div class="card">
+<h2>💍 Entrega das alianças</h2>
+<p>09 de Junho de 2025</p>
+<img class="foto" src="foto3.jpg.jpeg">
+</div>
 
-    <div class="card">
-        <h2>🎵 Nossa Música</h2>
-        <p>Amo Noite e Dia - Jorge & Mateus</p>
-        <a href="https://open.spotify.com/" target="_blank">
-            <button>Ouvir Música</button>
-        </a>
-    </div>
+<div class="card">
+<h2>📸 Nossos Momentos</h2>
+
+<div class="galeria">
+
+<img src="foto4.jpg.jpeg">
+<img src="foto5.jpg.jpeg">
+<img src="foto6.jpg.jpeg">
+<img src="foto7.jpg.jpeg">
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>🎵 Nossa Música</h2>
+
+<p>Amo Noite e Dia - Jorge & Mateus</p>
+
+<a class="botao"
+href="https://www.youtube.com/results?search_query=Jorge+e+Mateus+Amo+Noite+e+Dia"
+target="_blank">
+
+Ouvir Música ❤️
+
+</a>
+
+</div>
+
 </section>
 
 <section class="final">
+
 <h2>💌 Para Isabela</h2>
 
 <p>
+
 Você é o melhor presente que Deus me deu.
-Eu te esperei a minha vida inteira, e com você ao meu lado me faz me sentir bem...
-</p>
 
-<p>
-Eu te amo intensamente e infinitamente ❤️
-</p>
+Eu te esperei a minha vida inteira, e com você ao meu lado me faz me sentir bem, me traz motivos para continuar lutando cada dia mais.
 
-<h1>❤️ EU TE AMO ❤️</h1>
+Me apaixonando cada vez mais pelos seus olhos, pelos seus beijinhos e pelo seu abraço que me faz sentir seguro e em casa.
+
+Nos conhecemos há pouco tempo e parece que já faz meses.
+
+Tudo isso é tão especial que não existem palavras para explicar.
+
+Sei que este amor veio de Deus para abençoar nossas vidas.
+
+Quero te amar cada dia mais e fazer dar certo cada vez mais contigo.
+
+Porque o amor não é fácil, mas o importante é estarmos sempre juntos.
+
+E acima de tudo, ter Deus no centro do nosso relacionamento.
+
+EU TE AMO MUITO ❤️
+
+Que Deus abençoe a nossa união, nosso namoro e nosso futuro.
+
+❤️ Leonardo & Isabela ❤️
+
+</p>
 
 </section>
+
+<script>
+
+const inicio = new Date("2025-05-16");
+
+function atualizarContador(){
+
+const hoje = new Date();
+
+const diferenca = hoje - inicio;
+
+const dias = Math.floor(
+diferenca / (1000*60*60*24)
+);
+
+document.getElementById("contador").innerHTML =
+"❤️ Juntos há " + dias + " dias ❤️";
+
+}
+
+atualizarContador();
+
+for(let i=0;i<40;i++){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤️";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=
+(Math.random()*6+4)+"s";
+
+heart.style.opacity=Math.random();
+
+document.body.appendChild(heart);
+
+}
+
+</script>
 
 </body>
 </html>
